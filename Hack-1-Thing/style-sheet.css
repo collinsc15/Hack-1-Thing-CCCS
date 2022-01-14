@@ -1,0 +1,51 @@
+body {
+    background: rgba(61, 173, 61, 0.5);
+    font-family: monospace;
+}
+#navbar{
+    display: table;
+    width: 100%;
+}
+ul {
+    display: table-row;
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    border-left-style: solid;
+    border-color: rgb(129, 185, 83);
+    border-width: 10px;
+    overflow: hidden;        
+}
+ul li{
+    display: table-cell;
+    height:60px;
+    text-align: center;
+    vertical-align: middle;
+    width:120px;
+    border: none;
+}
+li{
+float: left;
+}
+li a{
+    border: none;
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+    height: 60px;
+    color: black;
+}
+
+#header {
+    margin: 0px;
+    font-family: monospace;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    padding-left:0;
+}
+li:hover{
+    background-color: rgb(129, 185, 83);;
+    color: white;
+}
+
