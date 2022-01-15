@@ -20,6 +20,7 @@
         }
     ?>
     <div id="selector">
+        <h2>Motion Sickness-Phoebe Bridgers</h2>
         <img src="sITA.jpeg" alt="Phoebe Bridgers Starnger in the Alps">
         <form action="data.php" method="post">
             <input type="submit" class="button" name="liked" value="like" style="float:left"></form>
