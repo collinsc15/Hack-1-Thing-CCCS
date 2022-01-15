@@ -1,29 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style-sheet.css">
-</head>
+<?php
+  include_once 'header.php'
+?>
 <body>
-<div id="navbar">
-    <ul>
-        <li id="header"><a href="proj.php"><span>Music-fi</span></a></li>
-            
-        <li style="float:right"><a href="login.php"><span></span>Log In</span></a></li>
-        <li style="float:right"><a href="register.php"><span>Create Account</span></a></li>
-    </ul> 
-  </div>
-  <h2>HTML Forms</h2>
+  <h2>Log In</h2>
 
-  <form action="data.php">
+  <form action="includes/login_inc.php" method="post">
     <label for="uname">User name:</label><br>
-    <input type="text" id="uname" name="uname"><br>
+    <input type="text" id="uname" name="uname" placeholder="User Name/Email"><br>
     <label for="pwd">Password:</label><br>
-    <input type="password" id="pwd" name="pwd"><br><br>
-    <input type="submit" value="Submit">
+    <input type="password" id="pwd" name="pwd" placeholder="Password"><br><br>
+    <button type="submit" name="logger">Log In</button>
   </form> 
   
-  <p>If you click the "Submit" button, the form-data will be sent to a page called "data.php".</p>
+  <?php
+    if (isset($_GET["error"])) {
+      if ($_GET["error"] == "emptyinput") {
+        echo "<p>Fill in all fields!</p>";
+      }
+      else if ($_GET["error"] == "wronglogin") {
+        echo "<p>Invalid login information. Please verify your inputs and try again.</p>";
+      }
+    }
+  ?>
 </body>
