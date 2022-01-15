@@ -2,6 +2,13 @@ body {
     background: #73bd75;
     font-family: monospace;
 }
+
+h2{
+display: block;
+text-align: center;
+font-size: 20px;
+}
+
 #navbar{
     display: table;
     width: 100%;
