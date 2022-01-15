@@ -48,4 +48,28 @@ li:hover{
     background-color: rgb(129, 185, 83);;
     color: white;
 }
+#selector{
+    background: white;
+    width:70%;
+    width: 50%;
+    margin: auto;
+    margin-top: 8%;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    display: inline-block;
+    cursor: pointer;
+  }
 
